@@ -1,9 +1,113 @@
 body {
   background-image: url("../assets/background.png");
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0;
 }
 
 .nav-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin: 0;
+  padding: 0px;
+  position: sticky;
+}
+
+#nav-mobile li {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-mobile {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.image-container1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.image-container2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.inverted {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.information-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-info {
+  justify-content: center;
+  text-align: center;
+}
+
+.name-tag {
+  margin-top: -3vh;
+  margin-bottom: -3vh;
+}
+
+.profile-line {
+  border-top: 1px solid white;
+  width: 25vh;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.follower_container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.goals_image {
+  width: 95%;
+}
+
+.circles {
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.pink {
+  background-color: pink;
 }
