@@ -1,0 +1,77 @@
+.header {
+    text-align: center;
+    background-color: black;
+}
+
+.black-block {
+    display: flex; /* Nustatyti lankstų lygiavimą */
+    justify-content: center; /* Centruoti elementus horizontaliai */
+    align-items: center; /* Centruoti elementus vertikaliai */
+}
+
+
+.content {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    padding-top: 30px; /* Padidinkite, jei reikia, kad būtų atstumas nuo viršaus */
+}
+
+.text_section{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin:0 auto; 
+    padding-bottom: 25px;
+}
+
+.image-box img{
+    width: 100%; /* Užpildo paveikslėlio dydį tėvinio elemento ribose */
+    height: auto; /* Leidžia paveikslėliui išlaikyti proporcijas */
+    display: block; /* Užtikrina, kad paveikslėlis būtų centruotas vertikaliai */
+    margin: 0 auto; /* Centruoja paveikslėlį horizontaliai */
+    object-fit: cover;
+}
+.image img{
+    max-width: 75px;
+    max-height: 75px;
+    display: block; /* Užtikrina, kad paveikslėlis būtų centruotas vertikaliai */
+    margin: 0 auto; /* Centruoja paveikslėlį horizontaliai */
+
+}
+.mood-box{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 150px; /* Pakeisti norimą plotį */
+    height: 75px; /* Pakeisti norimą aukštį */
+    margin:0 auto; 
+}
+
+
+.button{
+    border: none; /* Pašalinti mygtuko rėmelį */
+    background: none; /* Pašalinti fono spalvą */
+    margin: 5px; /* Pridėti tarpą tarp mygtukų */
+    padding: 0;
+    width: 100px; /* Pridėkite norimą mygtuko plotį */
+    height: 100px;
+}
+
+.button img {
+    width: 100%; /* Užpildyti mygtuko plotį nuotrauka */
+    height: 100%; /* Automatiškai pritaikyti nuotraukos aukštį */
+    object-fit: cover;
+}
+.middle-img{    
+    width: 50px; /* Sumažinti vidurinės nuotraukos plotį */
+    height: 50px; /* Sumažinti vidurinės nuotraukos aukštį */
+    overflow: hidden;
+}
+.middle-img img {
+    max-width: 100%; /* Nustatyti maksimalų leistiną plotį */
+    max-height: 100%; /* Nustatyti maksimalų leistiną aukštį */
+}
