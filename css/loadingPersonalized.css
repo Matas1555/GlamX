@@ -1,0 +1,19 @@
+body {
+  background-image: url("../assets/background.png");
+  overflow: hidden;
+}
+
+.login_logo {
+  margin-top: 25vh;
+  width: 100%;
+}
+
+
+.trademark {
+  position: absolute;
+  text-align: center;
+  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
