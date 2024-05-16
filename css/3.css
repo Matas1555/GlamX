@@ -3,17 +3,17 @@
     background-color: black;
 }
 
+body {
+    background-image: url("../assets/background.png");
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
 .black-block {
     display: flex; /* Nustatyti lankstų lygiavimą */
     justify-content: center; /* Centruoti elementus horizontaliai */
     align-items: center; /* Centruoti elementus vertikaliai */
-}
-
-
-.content {
-    background-image: url('../assets/background.png');
-    background-size: cover;
-    padding-top: 30px; /* Padidinkite, jei reikia, kad būtų atstumas nuo viršaus */
 }
 
 .text_section{
@@ -75,3 +75,60 @@
     max-width: 100%; /* Nustatyti maksimalų leistiną plotį */
     max-height: 100%; /* Nustatyti maksimalų leistiną aukštį */
 }
+
+nav {
+    margin: 0;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    padding: 0px;
+    position: sticky;
+  }
+  
+  #nav-mobile li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #nav-mobile {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .image-container1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+
+  }
+  
+  .image-button{
+    outline: none;
+    border: none;
+  }
+
+  .image-container2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 80px;
+  }
+
+  .image-container3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+
+  .inverted {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+      brightness(102%) contrast(102%);
+  }
