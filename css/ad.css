@@ -1,0 +1,14 @@
+body {
+    background-image: url("../assets/background.png");
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+.button-color {
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px;
+    overflow: hidden;
+}
