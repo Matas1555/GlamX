@@ -58,7 +58,7 @@ body {
   font-style: italic;
   font-size: 27px;
   width: 390px; /* Pakeisti norimą plotį */
-  height: 75px; /* Pakeisti norimą aukštį */
+  height: 90px; /* Pakeisti norimą aukštį */
   margin: 0 auto;
 }
 .generate-button button {
@@ -153,4 +153,24 @@ body {
 .inverted {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
     brightness(102%) contrast(102%);
+}
+.add-new-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 220px;
+  margin-right: 25px;
+ 
+}
+.image-box.add-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust as necessary */
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
 }
