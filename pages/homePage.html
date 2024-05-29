@@ -10,14 +10,27 @@
     <link rel="stylesheet" href="../css/homePage.css" />
     <title>GlamX</title>
   </head>
+  <style>
+    .checkmark-image {
+      transition: filter 0.5s; /* Smooth transition for color inversion */
+      cursor: pointer; /* Indicate that the image is clickable */
+    }
+
+    .invertedImage {
+      filter: invert(1);
+    }
+  </style>
   <body>
     <nav>
-      <div class="nav-wrapper" style="padding-top: 10px;">
-        <br>
+      <div class="nav-wrapper" style="padding-top: 0px">
+        <br />
         <ul id="nav-mobile">
           <li>
             <a href="./homePage.html">
-              <img class="image-container1 inverted" src="../assets/avatar.png"/>
+              <img
+                class="image-container1 inverted"
+                src="../assets/avatar.png"
+              />
             </a>
           </li>
           <li>
@@ -32,15 +45,24 @@
           </li>
           <li>
             <a href="./closetPage.html">
-              <button class="image-button inverted" style="background-color: white; border: 0px;">
-                <img style="width: 40px;" src="../assets/cabinet-logo.png">
+              <button
+                class="image-button inverted"
+                style="background-color: white; border: 0px"
+              >
+                <img style="width: 40px" src="../assets/cabinet-logo.png" />
               </button>
             </a>
           </li>
           <li>
             <a href="./FriendsPage.html">
-              <button class="image-button" style="background-color: black; border: 0px;">
-                <img class="image-container1 inverted" src="../assets/friends-logo.png"/>
+              <button
+                class="image-button"
+                style="background-color: black; border: 0px"
+              >
+                <img
+                  class="image-container1 inverted"
+                  src="../assets/friends-logo.png"
+                />
               </button>
             </a>
           </li>
@@ -49,9 +71,15 @@
     </nav>
     <div class="information-container">
       <div class="profile-info">
+        <img style="width: 150px" src="../assets/36.png" />
         <div class="image-and-name">
-          <img style="width: 150px" src="../assets/36.png" />
-          <img class="name-tag" src="../assets/31.png" />
+          <p class="name-tag">Meda</p>
+          <img
+            class="checkmark-image"
+            id="CHimage"
+            style="width: 30px"
+            src="../assets/checkmark.png"
+          />
         </div>
         <div class="profile-line"></div>
         <div class="follower_container">
@@ -64,7 +92,25 @@
             <p>154</p>
           </div>
         </div>
-        <img class="goals_image" src="../assets/35.png" />
+        <div class="profile-personality-box">
+          <div class="personality-trait-box">
+            <div class="personality-text1">Goal</div>
+            <div class="personality-text2">Look presentable</div>
+          </div>
+          <div class="personality-trait-box">
+            <div class="personality-text1">Style</div>
+            <div class="personality-text2">Formal clothing</div>
+          </div>
+          <div class="personality-trait-box">
+            <div class="personality-text1">Music genre</div>
+            <div class="personality-text2">R&B</div>
+          </div>
+          <div class="personality-trait-box">
+            <div class="personality-text1">Hobby</div>
+            <div class="personality-text2">Piloting a plane</div>
+          </div>
+        </div>
+        <!-- <img class="goals_image" src="../assets/35.png" /> -->
         <div class="circles">
           <div class="circle black"></div>
           <div class="circle white"></div>
@@ -72,5 +118,10 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById("CHimage").addEventListener("click", function () {
+        this.classList.toggle("invertedImage");
+      });
+    </script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap");
+
 body {
   background-image: url("../assets/background.png");
   overflow: hidden;
@@ -52,8 +54,11 @@ nav {
 .information-container {
   display: flex;
   flex-direction: row;
-  flex: 1;
+  /* flex: 1; */
   padding: 20px;
+  align-items: center;
+  gap: 5vh;
+  justify-content: center;
 }
 
 .profile-info {
@@ -61,9 +66,22 @@ nav {
   text-align: center;
 }
 
-.name-tag {
+.image-and-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
   margin-top: -3vh;
   margin-bottom: -3vh;
+}
+
+.name-tag {
+  color: white;
+  font-size: 50px;
+  font-family: "Herr Von Muellerhoff", cursive;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 .profile-line {
@@ -76,7 +94,7 @@ nav {
 
 .follower_container {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
+  color: rgb(223, 222, 222);
   display: flex;
   gap: 30px;
   text-align: center;
@@ -89,6 +107,7 @@ nav {
 }
 
 .circles {
+  margin-top: 2vh;
 }
 
 .circle {
@@ -101,7 +120,7 @@ nav {
 }
 
 .black {
-  background-color: black;
+  background-color: rgb(204, 39, 107);
 }
 
 .white {
@@ -110,4 +129,39 @@ nav {
 
 .pink {
   background-color: pink;
+}
+
+.profile-personality-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+
+.personality-trait-box {
+  display: flex;
+  gap: 2vh;
+  color: white;
+  margin-left: -6vh;
+  margin-bottom: 1vh;
+  padding: 7px;
+  width: 140%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.233);
+  justify-content: space-between;
+}
+
+.personality-text {
+  color: rgb(211, 209, 209);
+  background-color: rgba(0, 0, 0, 0.438);
+  padding: 7px;
+}
+
+.personality-text1 {
+  font-size: 22px;
+}
+
+.personality-text2 {
+  font-size: 18px;
+  text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px #000000, 0 0 3px #000000,
+    0 0 4px #000000, 0 0 5px #000000, 0 0 6px #000000;
 }

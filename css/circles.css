@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap");
 .header {
-    text-align: center;
-    background-color: black;
+  text-align: center;
+  background-color: black;
 }
 
 .black-block {
-    display: flex; /* Nustatyti lankstų lygiavimą */
-    justify-content: center; /* Centruoti elementus horizontaliai */
-    align-items: center; /* Centruoti elementus vertikaliai */
+  display: flex; /* Nustatyti lankstų lygiavimą */
+  justify-content: center; /* Centruoti elementus horizontaliai */
+  align-items: center; /* Centruoti elementus vertikaliai */
 }
 
 body {
@@ -19,156 +19,164 @@ body {
 
 .mood-section,
 .generate-button {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.image-section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 stulpeliai */
-    padding: 10px;
+.image-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 stulpeliai */
+  padding: 10px;
 }
 .image-box {
-    border-radius: 10px;
-    background-color: black; /* Juodas fono spalva */
-    overflow: hidden; /* Užtikrina, kad paveikslėlis būtų apkarpytas pagal tėvinio elemento ribas */
+  border-radius: 10px;
+  background-color: black; /* Juodas fono spalva */
+  overflow: hidden; /* Užtikrina, kad paveikslėlis būtų apkarpytas pagal tėvinio elemento ribas */
 }
-.image-box img{
-    width: 100%; /* Užpildo paveikslėlio dydį tėvinio elemento ribose */
-    height: auto; /* Leidžia paveikslėliui išlaikyti proporcijas */
-    display: block; /* Užtikrina, kad paveikslėlis būtų centruotas vertikaliai */
-    margin: 0 auto; /* Centruoja paveikslėlį horizontaliai */
+.image-box img {
+  width: 100%; /* Užpildo paveikslėlio dydį tėvinio elemento ribose */
+  height: auto; /* Leidžia paveikslėliui išlaikyti proporcijas */
+  display: block; /* Užtikrina, kad paveikslėlis būtų centruotas vertikaliai */
+  margin: 0 auto; /* Centruoja paveikslėlį horizontaliai */
 }
-.mood-box{
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
-    width: 175px; /* Pakeisti norimą plotį */
-    height: 110px; /* Pakeisti norimą aukštį */
-    margin:0 auto; 
-    
-    
+.mood-box {
+  background-color: #eaf5fffd;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 27px;
+  width: 390px; /* Pakeisti norimą plotį */
+  height: 75px; /* Pakeisti norimą aukštį */
+  margin: 0 auto;
 }
 .generate-button button {
-    /*background-color: blue;*/
-    background-image: url('../assets/background.png');
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+  /*background-color: blue;*/
+  background-image: url("../assets/background.png");
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
 }
 
-.button{
-    border: none; /* Pašalinti mygtuko rėmelį */
-    background: none; /* Pašalinti fono spalvą */
-    margin: 5px; /* Pridėti tarpą tarp mygtukų */
-    padding: 0;
-    width: 100px; /* Pridėkite norimą mygtuko plotį */
-    height: 100px;
+.button {
+  border: none; /* Pašalinti mygtuko rėmelį */
+  background: none; /* Pašalinti fono spalvą */
+  margin: 5px; /* Pridėti tarpą tarp mygtukų */
+  padding: 0;
+  width: 100px; /* Pridėkite norimą mygtuko plotį */
+  height: 100px;
 }
 
 .button img {
-    width: 100%; /* Užpildyti mygtuko plotį nuotrauka */
-    height: 100%; /* Automatiškai pritaikyti nuotraukos aukštį */
-    object-fit: cover;
+  width: 100%; /* Užpildyti mygtuko plotį nuotrauka */
+  height: 100%; /* Automatiškai pritaikyti nuotraukos aukštį */
+  object-fit: cover;
 }
-.middle-img{    
-    width: 50px; /* Sumažinti vidurinės nuotraukos plotį */
-    height: 50px; /* Sumažinti vidurinės nuotraukos aukštį */
-    overflow: hidden;
+.middle-img {
+  width: 50px; /* Sumažinti vidurinės nuotraukos plotį */
+  height: 50px; /* Sumažinti vidurinės nuotraukos aukštį */
+  overflow: hidden;
 }
 .middle-img img {
-    max-width: 100%; /* Nustatyti maksimalų leistiną plotį */
-    max-height: 100%; /* Nustatyti maksimalų leistiną aukštį */
+  max-width: 100%; /* Nustatyti maksimalų leistiną plotį */
+  max-height: 100%; /* Nustatyti maksimalų leistiną aukštį */
 }
 .nav-wrapper {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    margin: 0;
-    padding: 0px;
-    position: sticky;
-  }
-  
-  #nav-mobile li {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #nav-mobile {
-    padding-left: 0;
-    margin-left: 0;
-  }
-  
-  .image-container1 {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin: 0;
+  padding: 0px;
+  position: sticky;
+}
 
-  }
-  
-  .image-button{
-    outline: none;
-    border: none;
-  }
+#nav-mobile li {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
 
-  .image-container2 {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 80px;
-  }
+#nav-mobile {
+  padding-left: 0;
+  margin-left: 0;
+}
 
-  .image-container3 {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 100px;
+.image-container1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.image-button {
+  outline: none;
+  border: none;
+}
+
+.image-container2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.image-container3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
 }
 .black {
-    background-color: black;
-  }
-  
-  .white {
-    background-color: white;
-  }
-  
-  .pink {
-    background-color: pink;
-  }
-  .inverted {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
-      brightness(102%) contrast(102%);
-  }
-  .circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 10px;
-    border: 2px solid black; /* Added border */
+  background-color: black;
 }
+
+.white {
+  background-color: white;
+}
+
+.pink {
+  background-color: pink;
+}
+.inverted {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+  margin-top: 60px;
+  border: 2px solid black; /* Added border */
+  transition: all ease 0.3s;
+}
+
+.circle:hover {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
 .circle.red {
-    background-color: red;
+  background-color: red;
 }
 .circle.green {
-    background-color: green;
+  background-color: green;
 }
 .circle.blue {
-    background-color: blue;
+  background-color: blue;
 }
 .circle.yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
 .circle.purple {
-    background-color: purple;
+  background-color: purple;
 }
 .circle.orange {
-    background-color: orange;
+  background-color: orange;
 }
