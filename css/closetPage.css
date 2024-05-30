@@ -212,8 +212,12 @@ nav {
   color: #e9f4ff;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 900;
   padding-top: 5px;
+}
+
+.desc {
+  font-style: italic;
 }
 
 .clothing_decription-box {
@@ -229,4 +233,173 @@ nav {
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff6464, 0 0 20px #ff6464,
     0 0 25px #ff6464, 0 0 30px #ff6464, 0 0 35px #ff6464;
+}
+
+.friends-posts {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  display: flex;
+  height: 420px;
+  width: 330px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.image-shadow {
+  padding-top: -10px;
+  margin-top: 10px;
+  width: 299px;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.post-image {
+  width: 98%;
+  height: 102%;
+  object-fit: contain;
+}
+
+.post-image2 {
+  width: 100%;
+  height: 97%;
+  object-fit: contain;
+}
+
+.post-profile-photo {
+  margin-top: -15px;
+  margin-left: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-info-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+  margin-top: 2vh;
+}
+
+.caption {
+  margin-left: -10px;
+  margin-top: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.post-desc {
+  margin-top: -5px;
+  margin-left: -10px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.post-commentbtn {
+  margin-top: 7px;
+  width: 30px;
+}
+
+.glam-friends-logo {
+  margin: auto;
+  margin: 0px 40px;
+  width: 400px;
+}
+
+.heart,
+.heart-button {
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  .heart-flip {
+    --base: 18px;
+    --duration: 0.6s;
+    --active: #ea4673;
+    --inactive: #d1d6ee;
+    width: var(--base);
+    outline: none;
+    height: calc(var(--base) + var(--base) / 2);
+    border-radius: calc(var(--base) / 2) calc(var(--base) / 2) 0 0;
+    position: relative;
+    transform-origin: 50% 66.8%;
+    transform-style: preserve-3d;
+    transform: rotate(var(--rotate, -45deg));
+    transition: background var(--duration), transform var(--duration) ease;
+    background: var(--heart-background, var(--inactive));
+    &:before,
+    &:after {
+      content: "";
+      width: calc(var(--base) / 2);
+      height: var(--base);
+      border-radius: var(
+        --pseudo-border-radius,
+        calc(var(--base) / 2) 0 0 calc(var(--base) / 2)
+      );
+      outline: none;
+      position: absolute;
+      left: var(--pseudo-left, -50%);
+      transform-origin: var(--pseudo-origin, 100%) 50%;
+      bottom: 0;
+      background: var(--heart-background, var(--inactive));
+      filter: brightness(var(--pseudo-filter, 50%));
+      transform: translateX(1%) rotateY(var(--pseudo-rotate, 90deg))
+        translateZ(0);
+      transition: background var(--duration), transform var(--duration) ease,
+        filter var(--duration);
+    }
+    &:after {
+      outline: none;
+      --pseudo-border-radius: 0 calc(var(--base) / 2) calc(var(--base) / 2) 0;
+      --pseudo-left: 100%;
+      --pseudo-origin: 0;
+      filter: brightness(var(--pseudo-filter-second, 100%));
+      transform: translateX(-1%) rotateY(var(--pseudo-rotate-second, 0deg))
+        translateZ(0);
+    }
+  }
+  &.active {
+    outline: none;
+    .heart-flip {
+      outline: none;
+      --rotate: 45deg;
+      --pseudo-filter: 100%;
+      --pseudo-filter-second: 50%;
+      --pseudo-rotate: 0deg;
+      --pseudo-rotate-second: 90deg;
+      --heart-background: var(--active);
+    }
+  }
+}
+
+.heart {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  transform: scale(var(--button-scale, 1)) translateZ(0);
+  transition: transform 0.2s;
+  &:active {
+    --button-scale: 0.95;
+    outline: none;
+  }
 }

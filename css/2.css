@@ -1,138 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap");
 .header {
-    text-align: center;
-    background-color: black;
+  text-align: center;
+  background-color: black;
 }
 body {
-    background-image: url("../assets/background.png");
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-.black-block {
-    display: flex; /* Nustatyti lankstų lygiavimą */
-    justify-content: center; /* Centruoti elementus horizontaliai */
-    align-items: center; /* Centruoti elementus vertikaliai */
+  background-image: url("../assets/background.png");
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-
-
+.black-block {
+  display: flex; /* Nustatyti lankstų lygiavimą */
+  justify-content: center; /* Centruoti elementus horizontaliai */
+  align-items: center; /* Centruoti elementus vertikaliai */
+}
 
 .mood-section,
 .share-button {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
 
 .image-box {
-    border-radius: 10px;
-    overflow: hidden;
-    padding-bottom: 25px; 
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 25px;
 }
-.image-box img{
-    width: 100%; /* Užpildo paveikslėlio dydį tėvinio elemento ribose */
-    height: auto; /* Leidžia paveikslėliui išlaikyti proporcijas */
-    display: block; /* Užtikrina, kad paveikslėlis būtų centruotas vertikaliai */
-    margin: 0 auto; /* Centruoja paveikslėlį horizontaliai */
+.image-box img {
+  width: 100%; /* Užpildo paveikslėlio dydį tėvinio elemento ribose */
+  height: auto; /* Leidžia paveikslėliui išlaikyti proporcijas */
+  display: block; /* Užtikrina, kad paveikslėlis būtų centruotas vertikaliai */
+  margin: 0 auto; /* Centruoja paveikslėlį horizontaliai */
 }
-.mood-box{
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
-    width: 150px; /* Pakeisti norimą plotį */
-    height: 75px; /* Pakeisti norimą aukštį */
-    margin:0 auto; 
-    
-    
+.mood-box {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 150px; /* Pakeisti norimą plotį */
+  height: 75px; /* Pakeisti norimą aukštį */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 auto;
+  margin-top: 3vh;
 }
 .share-button button {
-    /*background-color: blue;*/
-    background-image: url('../assets/background.png');
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+  /*background-color: blue;*/
+  width: 18vh;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 100px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 3px;
+  border: 0;
 }
 
-.button{
-    border: none; /* Pašalinti mygtuko rėmelį */
-    background: none; /* Pašalinti fono spalvą */
-    margin: 5px; /* Pridėti tarpą tarp mygtukų */
-    padding: 0;
-    width: 100px; /* Pridėkite norimą mygtuko plotį */
-    height: 100px;
+.share-button button:hover {
+  background-color: white;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.button {
+  border: none; /* Pašalinti mygtuko rėmelį */
+  background: none; /* Pašalinti fono spalvą */
+  margin: 5px; /* Pridėti tarpą tarp mygtukų */
+  padding: 0;
+  width: 100px; /* Pridėkite norimą mygtuko plotį */
+  height: 100px;
 }
 
 .button img {
-    width: 100%; /* Užpildyti mygtuko plotį nuotrauka */
-    height: 100%; /* Automatiškai pritaikyti nuotraukos aukštį */
-    object-fit: cover;
+  width: 100%; /* Užpildyti mygtuko plotį nuotrauka */
+  height: 100%; /* Automatiškai pritaikyti nuotraukos aukštį */
+  object-fit: cover;
 }
-.middle-img{    
-    width: 50px; /* Sumažinti vidurinės nuotraukos plotį */
-    height: 50px; /* Sumažinti vidurinės nuotraukos aukštį */
-    overflow: hidden;
+.middle-img {
+  width: 50px; /* Sumažinti vidurinės nuotraukos plotį */
+  height: 50px; /* Sumažinti vidurinės nuotraukos aukštį */
+  overflow: hidden;
 }
 .middle-img img {
-    max-width: 100%; /* Nustatyti maksimalų leistiną plotį */
-    max-height: 100%; /* Nustatyti maksimalų leistiną aukštį */
+  max-width: 100%; /* Nustatyti maksimalų leistiną plotį */
+  max-height: 100%; /* Nustatyti maksimalų leistiną aukštį */
 }
 .nav-wrapper {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    margin: 0;
-    padding: 0px;
-    position: sticky;
-  }
-  
-  #nav-mobile li {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #nav-mobile {
-    padding-left: 0;
-    margin-left: 0;
-  }
-  
-  .image-container1 {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30px;
-
-  }
-  
-  .image-button{
-    outline: none;
-    border: none;
-  }
-
-  .image-container2 {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 80px;
-  }
-
-  .image-container3 {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 100px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin: 0;
+  padding: 0px;
+  position: sticky;
 }
 
+#nav-mobile li {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
 
-  .inverted {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
-      brightness(102%) contrast(102%);
-  }
-  
+#nav-mobile {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.image-container1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.image-button {
+  outline: none;
+  border: none;
+}
+
+.image-container2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.image-container3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.inverted {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
